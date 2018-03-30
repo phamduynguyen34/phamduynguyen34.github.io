@@ -1,0 +1,51 @@
+.box {
+	border: 1px solid #dddddd ;
+	border-top-width: 5px ;
+	float: left;
+	width: 33.33333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333% ;
+	padding: 10px ;
+	margin: 0px;
+  }
+
+* {
+	max-width: 1000px;
+	box-sizing: border-box;
+	width: 100%;
+	margin: auto
+}
+#main-menu a {
+	font-size: 20px;
+	color: black ;
+}
+#main-menu a:hover {
+	color: blue;
+
+}
+
+#main-menu a.active{
+	font-weight: bold;
+}
+#main-menu{
+	text-align: center;
+}
+a{
+		text-decoration: none ;
+}
+.info{
+	border-color: red;
+}
+.thongtin{
+	border-color: blue;
+}
+.coquan{
+	border-color: yellow;
+}
+.info span{
+	color: red
+}
+.thongtin span{
+	color: blue
+}
+.coquan span{
+	color: yellow
+}

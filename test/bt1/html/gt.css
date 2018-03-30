@@ -1,0 +1,17 @@
+.box {
+	border: 1px solid #dddddd ;
+	border-top-width: 1px ;
+	float: left;
+	width: 33.33333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333% ;
+	padding: 10px ;
+  }
+
+* {
+	width: 1000px;
+	box-sizing: border-box;
+	width: 100%;
+	margin: auto
+}
+body{
+	background-clip: 
+}

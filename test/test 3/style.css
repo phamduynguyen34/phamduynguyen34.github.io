@@ -1,0 +1,43 @@
+*{
+	box-sizing: border-box;
+	margin: auto;
+}
+img{
+	width: 1140px;
+}
+a{
+	font-size: 210%;
+	text-decoration:none;
+}
+
+#wrap{
+	width: 1140px;
+	text-align: center;
+}
+.menu{
+	border: 0px solid white;
+	padding: 6%;
+}
+a:hover{
+	color: aqua;
+}
+.banner{
+	padding-bottom: 40px
+}
+.name img{
+	max-width: 360px;
+	max-height: 400px;
+}
+.name{
+	display: inline;
+	float: left;
+	padding: 10px;
+	padding-top: 100px;
+	padding-bottom: 50px; 
+}
+p{
+	font-size: 25px;
+}
+.ten{
+	padding-bottom: 20px;
+}

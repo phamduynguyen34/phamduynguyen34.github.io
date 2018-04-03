@@ -1,0 +1,23 @@
+*{
+	box-sizing: border-box;
+	width: 1000px;
+	margin: auto;
+}
+.title{
+	text-align: center;
+}
+.signature{
+	text-align: right;
+}
+.name{
+	padding-right: 5%;
+}
+.all{
+	padding-right: 2%;
+}
+.content{
+	text-align: justify;
+}
+body{
+	background-color: aqua;
+}

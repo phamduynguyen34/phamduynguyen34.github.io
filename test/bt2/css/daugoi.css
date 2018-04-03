@@ -23,6 +23,11 @@
 #main-menu a:hover{
 	color: aqua;
 }
+
+#main-menu > a: first-child{
+	position: absolute;
+}
+}
 	
 
 *{

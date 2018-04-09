@@ -16,8 +16,28 @@ a{
 }
 .menu{
 	border: 0px solid white;
-	padding: 6%;
+	padding: 3%;
+
 }
+.main-menu{
+	position: relative;
+}
+.main-menu > a:first-child {
+	padding: 4px;
+	background-color: white;
+	border-radius: 50%;
+	position: absolute;
+	top: -90px;
+    left:2px;
+	
+   
+}
+.main-menu > a:first-child > img {
+	max-width: 160px;
+	border-radius: 50%;
+	
+}
+	
 a:hover{
 	color: aqua;
 }
@@ -40,4 +60,14 @@ p{
 }
 .ten{
 	padding-bottom: 20px;
+}
+#top > img{
+	max-width: 130px;
+}
+#top{
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+
+
 }

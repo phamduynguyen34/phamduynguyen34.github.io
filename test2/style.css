@@ -1,0 +1,145 @@
+*{
+	box-sizing: border-box;
+}
+
+.banner img{
+	width: 100%;
+	margin: auto;
+	max-height: 650px;
+	z-index: 5;
+}
+h1{
+	text-align: center;
+}
+
+
+
+.t{
+	text-align: center;
+}
+
+
+
+
+.name{
+	padding:101px;
+}
+.name img{
+	width: 150px;
+	/*height: 150px;*/
+}
+
+
+
+
+.game{
+	float: left;
+}
+
+
+
+
+
+.all{
+	width: 75%;
+	float: left;
+}
+
+.care{
+	width: 25%;
+	float: left;
+}
+
+
+
+
+
+
+.name1 img{
+	width: 150px;
+}
+.name1{
+	float: left;
+	padding: 42px;
+	padding-top: 95px;
+}
+
+
+
+
+
+@keyframes title {
+	25%{
+		transform: translate(200px,0);
+		opacity: 1;
+		
+	}
+	50%{transform: translate(300px,0);
+		opacity: 0.75;
+		
+
+		
+	}
+	75%{transform: translate(400px,0);
+		opacity: 0.5;
+		
+	}
+	99%{transform: translate(500px,0);
+		opacity: 0.25;
+		
+
+	}
+}
+.happy{
+	animation: title 7s linear infinite;
+}
+@keyframes chuc {
+	0%{transform: translate(0,0);
+		opacity: 0;
+	}
+	25%{
+		transform: translate(0px,110px);
+		opacity: 0;
+	}
+	50%{transform: translate(0px,220px);
+		opacity: 0.5;
+	}
+	75%{transform: translate(0px,330px);
+		opacity: 0.75;
+	}
+	99%{transform: translate(0px,440px);
+		opacity: 1;
+
+	}
+}
+.care{
+	animation: chuc 5s linear infinite;
+}
+
+.name{
+	transform: all 1s ease infinite;
+}
+.name:hover{
+	transform: translate( 2px,-2px);
+}
+.wrap{
+	border: 0px solid gray;
+	border-top-width: 3px;
+}
+
+
+.avt img{
+	width: 200px; border-radius: 50%;
+	z-index: 1
+}
+.all{
+	position: relative;
+
+}
+.avt{
+	position: absolute;
+    top: -339px;
+    left: 126px;
+  
+
+}

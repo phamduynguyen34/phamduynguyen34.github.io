@@ -81,11 +81,13 @@
 }
 .img1 {
 	overflow: hidden;
+	opacity: 1;
 }
 
 .img1:hover img {
 	transform: scale(1.5);
 	transition: transform 1s ease;
+	opacity: 0.5;
 
 }
 .box1{

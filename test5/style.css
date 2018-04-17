@@ -1,0 +1,179 @@
+*{
+	box-sizing: border-box;
+
+}
+body{
+	margin: 0px;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+a:hover{
+	color: #6dd2ff;
+}
+.wrap{
+	margin: auto;
+	width: 1140px;
+	position: relative;
+
+}
+.banner img{
+	width: 1140px;
+	height: 700px;
+	position: absolute;
+	z-index: -1;
+}
+.banner{
+	position: relative;	
+}
+.stt{
+	text-align: center;
+	color: white;
+	position: absolute;
+	top: 242px;
+	left: 424px;
+}
+.menu{border: 0px solid gray;
+	border-bottom-width: 145px; 
+	opacity:0.5;
+	position: relative;
+
+}
+
+
+.logo{
+	float: left;
+	width: 20%;
+	padding-left: 106px;
+}
+.logo img{
+	width: 200px;
+}
+.menu2{
+	float: left;
+	width: 80%;
+	padding-left: 200px;
+	padding-top: 64px;
+}
+.menu2 div{
+	float: left;
+	padding-left: 30px;
+
+}
+
+
+.menu2 div a:hover{
+	border: 0.1px solid;
+	box-shadow: 0 5px 5px 0;
+}
+#services{
+	padding-left: 15%;
+	padding-right: 15%;
+	color: white;
+	position: absolute;
+	top: 448px;
+	background-color: #6dd2ff;
+}
+
+#services img{
+	width: 50px;
+	height: 50px;
+}
+.coffee{
+	float: left;
+	width: 25%;
+}
+.instant{
+	float: left;
+	width: 25%;
+}
+.mayanh{
+	float: left;
+	width: 25%;
+}
+
+.frame{
+	float: left;
+	width: 25%;
+}
+
+p{
+	padding-right: 50px;
+}
+h1{
+	font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#PORTFOLIO{
+	
+	position: absolute;
+	top: 715px;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+#PORTFOLIO h1{
+	color: gray;
+}
+
+.POR1{
+	width: 20%;
+	float: left;
+}
+.POR2{
+	width: 80%;
+	float: left;
+	padding-left: 125px;
+}
+.POR2 a{
+	color: black;
+	font-size: 13px;
+}
+.POR2 div{
+	float: left;
+	padding: 18px;
+}
+
+#img{
+	position: absolute;
+	top: 75px;
+	padding-right: 15%;
+
+}
+
+#img div img{
+	width: 25%;
+	height: 188.33px;
+	float: left;
+	vertical-align: middle;
+	padding:10px;
+	
+
+}
+
+
+.created{
+	padding: 0px;
+	position: absolute;
+	top: 420px;
+	left:-171px;
+	animation: run 10s ease infinite;
+}
+@keyframes run{
+	0%{opacity: 1;transform: translateX(0px)}
+	100%{opacity: 0.7;transform: translateX(1015px);}
+}
+

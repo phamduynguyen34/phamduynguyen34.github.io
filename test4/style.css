@@ -1,0 +1,88 @@
+*{
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+	color: red;
+}
+.menu{
+	width: 1140px;
+	margin: auto;
+	border: 3px solid #36ff00;
+	border-bottom-width: 151px;
+	position: relative;
+}
+.logo>img{
+	width: 200px;
+}
+.menu>li{
+	list-style-type: none;
+	float: left;
+}
+.menu>li>ul{
+	list-style-type: none;
+	display: none;
+	padding: 0px;
+	font-size: 20px;
+}
+.menu>li:hover>ul{
+	display: block;
+}
+.menu1{
+	padding-left: 45px;
+	font-size: 30px;
+}
+
+.time{
+	text-align: center;
+	position: absolute;
+	left: 897px;
+	top: 4px;
+}
+.title{
+	padding-top: 50px;
+	width: 1140px;
+	margin: auto;
+}
+.title1>li{
+	list-style-type: none;
+	padding-top: 25.5px;
+}
+.title1>li>ul{
+	list-style-type: none;
+	display: none;
+	padding-left: 10px;
+}
+.title1>li:hover>ul{
+	display: block;
+	list-style-type: none;
+}
+.title1{
+	float: left;
+	width: 20%;
+	margin: 0px;
+	padding: 0px;
+	background-color: aqua;
+}
+
+.title2{
+	float: left;
+	width: 60%;
+	text-align: center;
+}
+.title2>img{
+	width: 650px;
+	padding: auto;
+}
+.title3{
+	float: left;
+	width: 20%;background-color: aqua;
+	padding-bottom: 249px;
+}
+.title3>img{
+	width: 228px;
+}
+.cater{
+	margin: 0px;
+	text-align: center;
+}

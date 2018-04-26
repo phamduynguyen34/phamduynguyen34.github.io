@@ -1,0 +1,236 @@
+ <script >
+ 	// bai1 tinh binh phuong
+ 	// input:number
+ 	// output:number;number*number
+ 	function square(num){
+ 		// kiem tra xem co phai la number hay khong
+ 		if ( typeof num!= "number") {
+ 			// ket qua tra ve tren trinh duyet
+ 			document.write("deo phai so")
+ 			// ket qua tra ve tren console.log
+ 			return 'deo phai so'
+ 		}
+ 		// neu le so thi se say ra phep tinh
+ 		else{
+ 		// in ra trinh duyet
+ 		document.write(num*num)
+ 	// vietcaulenh binh phuong
+ 	return num*num}
+ 	// go square(gia tri cua bien) de kiem tra ket qua
+
+ }
+
+
+
+
+
+
+
+
+ 	// bai2
+ 	// input cho a,b,c la cac so
+ 	// output tinh (3a-2b+c)^2
+
+ 	function calculation (a, b, c){
+ 		// kiem tra a,b,c co phai la so hay khong
+ 		if(typeof a==="number"
+ 			&&typeof b==="number"
+ 			&&typeof c==="number")
+ 			// neu la so thi se thuc hien cac phep tinh tiep theo
+ 		{
+ 			// dat result co gia tri la 3a-2b+c
+ 			var result= 3*a+2*b-c;
+ 			// hien ra man hinh console ket qua cua (3a-2b+c)^2.... (square dung tu bai1)
+ 			return square(result);
+ 		}
+ 		// neu a,b,c khong phai la so thi se say ra truong hop sau
+ 		else{
+ 			// hien thi tren man hinh console
+ 			return'khong phai la so'
+ 			// hien thi tren man hinh trinh duyet nhung khong dc
+ 			document.write("khong phai la so")
+ 			// go calcuation ( , , ) de kiem tra ket qua
+ 		}
+ 	}
+
+
+
+
+
+
+
+
+
+
+
+
+ 	// bai3
+ 	// input cho string length>30
+ 	// output lay 1o ki tu dau va + "..."
+ 	function cutstring(str){
+ 		// kiem tra xem no co phai la chuoi hay khong
+ 		if(typeof str==="string" && str.length>30){
+ 			// dau tien la lay ra 10 ky tu dau tien cua chuoi
+ 			// dung ham slice hoac substring roi cong them dau ba cham o cuoi string
+ 			var res = str.slice(0,10 )+ "...";
+ 			return res;
+ 		}
+ 		// neu nhap chuoi khong dung vs yeu cau thi se xay ra ket qua sau
+ 		else{
+ 			// hien thi tren man hinh console.log
+ 			return"khong phai la string>30";
+ 		}
+	}
+	// go cutstring ('chuoi bat ki') de kkiem tra ket qua
+
+
+
+
+
+
+
+
+
+
+// bai4
+// input cho 1 string
+// output chuyen tu dau tien trong chuoi do thanh chu viet hoac
+	function character(str){
+		// kiem tra chuoi
+		if(typeof str==='string'){
+			// str.charAt    la chon 1 phan tu cua chuoi str
+			// .toUpperCase     viet hoa
+			// str.slice(1)    la chong tu phan tu thu 1 den het
+			// .toLowerCase      viet thuong
+			var res = str.charAt(0).toUpperCase()+ str.slice(1).toLowerCase();
+			// hien thi ket qua tren man hinh console.log
+			return res;
+		}
+		// neu khong phai chuoi thi se hien thi tren man hinh console.log
+		else{
+			return 'khong phai la chuoi';
+		}
+	}
+	// goi character( pham duy nguyen) de kiem tra
+
+
+
+
+
+
+
+
+
+
+
+
+	// bai5
+	// input cho mot mang(arry),cac gia tri cua mang = number
+	// output lay ra so nho nhat trong mang do
+	
+ 	function sortArray(arr){
+  // check check
+  if (Array.isArray(arr)){
+       for (var i=0; i<arr.length;i++){
+         // check tung phan tu cua mang co phai la so hay ko
+         if(typeof arr[i] != 'number'){
+           return "phan tu cua mang khong phai la so";
+         }
+        
+       } 
+     
+    //dung sort()
+    var resuil=arr.sort(function(a,b){
+      return a-b;
+    })
+    return resuil[0];
+    // dung math()
+    //arr = [1,3,4,5] => ...arr = 1,3,4,5
+    // cu phap ES6
+    // return Math.min(...arr);    
+    
+    
+  }else {
+    return "meo phai array";
+  }  
+}
+// console.log(sortArray([1,2,3,10,9]))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// bai6
+// input cho 1 mang array la ten cac hoc vien
+// output sap xep cac ten do theo thu tu a,b,c
+
+
+function name(arr){
+	if (Array.isArray(arr)){
+		// sort có tác dụng sắp xếp theo a-b nhưng chữ cái đầu phải cùng viết hoa hoặc viết thường
+		var res= arr.sort();
+		return res;
+	}else{
+		return
+		'kh phai array';
+	}
+
+}
+
+
+
+
+
+
+
+
+
+// bai7
+var teacher = {
+  firstName: "Kim",
+  lastName: "Dung",
+  age: 30,
+  say: function(){   
+  }
+}
+var student = {
+  firstName: "Duong",
+  lastName: "Dung",
+  age: 50,
+  say: function(){
+    
+  }
+}
+var parent = {
+  firstName: "Lu",
+  lastName: "Bo",
+  age: 1130,
+  say: function(){}
+}
+
+var aboutMe = function(){
+  document.write("xin chao toi la "+this.firstName+ " " + this.lastName+" nam nay toi "+ this.age+" tuoi");
+  // return this.firstName;
+}
+// tenopject.say() de in ra màn hình 1 câu giới thiệu bản thân và gán vào phương thức say() của các đối tượng trên.
+teacher.say = aboutMe;
+teacher.say();
+parent.say = aboutMe;
+parent.say();
+student.say = aboutMe;
+student.say() ;            
+
+ </script>
+
+
+
+

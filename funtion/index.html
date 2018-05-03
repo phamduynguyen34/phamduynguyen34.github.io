@@ -177,7 +177,12 @@
 function name(arr){
 	if (Array.isArray(arr)){
 		// sort có tác dụng sắp xếp theo a-b nhưng chữ cái đầu phải cùng viết hoa hoặc viết thường
-		var res= arr.sort();
+		var res= arr.sort(function(a,b){
+      // toLowerCase doi chu thuong de so sanh
+      if (a.toLowerCase()>b.toLowerCase()) return 1;
+      if (b.toLowerCase()<b.toLowerCase()) return -1;
+      return 0;
+    });
 		return res;
 	}else{
 		return
@@ -185,6 +190,8 @@ function name(arr){
 	}
 
 }
+
+// console.log(name(['anh', 'An', 'Binh', 'binh']));
 
 
 
@@ -227,7 +234,29 @@ teacher.say();
 parent.say = aboutMe;
 parent.say();
 student.say = aboutMe;
-student.say() ;            
+student.say() ;  
+
+
+
+
+
+
+
+
+function abc(arr) {
+  if (Array.isArray(arr)) {
+    var res=[];
+    for (var i = 0; i < arr.length-1; i++) {
+      if (arr[i]%2==0) {
+        res.push(arr[i]);
+      }
+    }
+    return res.sort(function(c,d) {
+      return c-d;
+    });
+  }
+}
+          
 
  </script>
 

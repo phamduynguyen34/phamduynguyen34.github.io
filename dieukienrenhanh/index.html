@@ -1,0 +1,16 @@
+<script>
+	function abc(arr) {
+  if (Array.isArray(arr)) {
+    var res=[];
+    for (var i = 0; i <= arr.length-1; i++) {
+      if (arr[i]%2==0) {
+        res.push(arr[i]);
+      }
+    }
+    return res.sort(function(c,d) {
+      return c-d;
+    });
+  }
+}
+ 
+</script>

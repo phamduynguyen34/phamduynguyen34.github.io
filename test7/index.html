@@ -1,8 +1,159 @@
-<script >
- function fact(num) {
-   for (var i = 1; i <=num; i++) {
-     num*=i;
-     return num;
-   }
- }
+<script>
+  function fact(num) {
+    var res=1;
+    for (var i = num; i > 0; i--) {
+      res*=i; 
+    }
+    return res;
+  }
+  
+  function double(arr) {
+    var res=[];
+    for (var i = 0; i <= arr.length-1; i++) {
+      res.push(arr[i]*2);
+    }
+    return res;
+  }
+
+
+
+
+  // dieu kien re nhanh
+  // kiem tra 2 tham so dua vao co phai so hay khong
+  // tim ra so lon nhat trong hai so do
+  function big(a, b) {
+    if (typeof a === 'number' && typeof b === 'number') {
+      if (a>b) {
+        return a;
+      }
+      else return b;
+    }
+    else {
+      return 'a va b khong phai la so';
+    }
+  }
+
+
+
+
+  // kiem tra 1 so co phai so nguyen duong
+  // tinh giai thua cua so do
+  function fact(num) {
+    if (typeof num==='number'&& num>=0) {
+
+      var res=1;
+      for (var i = 1; i <= num; i++) {
+        res*=i; 
+      }
+      return res;
+
+    }
+    else{
+      return'khong phai so nguyen duong lon hon 0';
+    }
+  }
+// cho mot mang cac so bat ki
+// tao ra mang moi trong do la cac so chan sap xep theo thu tu giam dan
+// function sortArray(arr){
+//   // check check
+//   if (Array.isArray(arr)){
+
+//     var res=[];
+//     for (var i=0; i<arr.length-1;i++) {
+//       if (arr[i]%2==0) {
+//         res.push(arr[i])
+//       }
+
+//     }
+//     return res.sort(function(c,d) {
+//       return c-d;
+//     });
+
+
+//   }
+
+
+// }
+
+
+
+
+
+
+
+
+
+
+function abc(arr) {
+  if (Array.isArray(arr)) {
+    var res=[];
+    for (var i = 0; i < arr.length; i++) {
+      if (arr[i]%2==0) {
+        res.push(arr[i]);
+      }
+    }
+    return res.sort(function(c,d) {
+      return c-d;
+    });
+  }
+}
+
+
+
+
+var obj = {
+  usename:'we',
+  password:'aaaaaaaaa',
+  confirm:'aaaaaaaaa',
+  intro:function() {
+    if (this.usename!=0 && this.usename.length<20) {
+      document.write('hop le'+ "<br>");
+      if (this.password.length>=6 && this.password.length<=30) {
+        document.write('hop le'+ "<br>");
+        if (this.confirm===this.password) {
+          document.write('hop le'+ "<br>");
+        }
+        else document.write( 'sai'+ "<br>");
+      }
+      else document.write( 'sai'+ "<br>");
+
+    }
+    else document.write( 'sai'+ "<br>");
+  }
+}
+
+
+
+// var obj = {
+//   usename:'',
+//   password:'',
+//   confirm:'',}
+//   function check(obj) {
+//     if (true) {}
+//       else
+//     if (true) {}
+//       else
+//     if (true) {}
+//       else
+//     if (true) {}
+//   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </script>

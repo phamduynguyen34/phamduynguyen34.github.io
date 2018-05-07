@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>abc</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<p id="p1" class="paragraph">The first HTML DOM Level 1 (1998), defined 11 HTML objects, object collections, and properties. These are still valid in HTML5.
+
+		Later, in HTML DOM Level 3, more objects, collections, and properties were added.
+
+	</p>
+	<p id="p2" class="paragraph">The first HTML DOM sdfsdfsdfsdfsfsfsfsdsdfsfsfsfsfsfsfsdfsdfsdfsdfLevel 1 (1998), defined 11 HTML objects, object collections, and properties. These are still valid in HTML5.
+
+		Later, in HTML DOM Level 3, more objects, collections, and properties were added.
+
+	</p>
+	<p id="p3" class="paragraph">The first HTML DOM Level 1 (1998), defined 11 HTML objects, object collections, and properties. These are still valid in HTML5.
+
+		Later, in HTML DOM Level 3, more objects, collections, and properties were added.
+
+	</p>
+	<script >
+		function changeFontSize(x) {
+			var paragraph=document.querySelectorAll('.paragraph');
+			for (var i = 0; i < paragraph.length; i++) {
+				paragraph[i].style.fontSize=x+'px';
+			}
+		}
+
+
+
+
+		function increaseFontSize(paragraph) {
+			var para =document.getElementById(paragraph);
+			var getFontSize = para.style.fontSize;  
+			getFontSize = parseInt(getFontSize);
+
+
+			if (getFontSize<=30) {
+				para.style.fontSize=(getFontSize+1)+'px';
+				console.log(getFontSize);
+			}
+		}
+
+
+
+		function decreaseFontSize(paragraph) {
+			var para =document.getElementById(paragraph);
+			var getFontSize = para.style.fontSize;  
+			getFontSize = parseInt(getFontSize);
+
+
+			if (getFontSize>=10) {
+				para.style.fontSize=(getFontSize-1)+'px';
+				console.log(getFontSize);
+			}
+		}
+
+
+
+		function changeColor() {
+			var x=document.getElementsByClassName('paragraph');
+			x[0].style.color='red';
+			x[1].style.color='blue';
+			x[2].style.color='aqua';
+		}
+
+
+
+
+		function changeBgColor(color) {
+			document.body.style.backgroundColor=color;
+			
+		}
+
+
+		
+
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+
+
+</body>
+</html>

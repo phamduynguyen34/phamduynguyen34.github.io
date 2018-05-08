@@ -21,6 +21,7 @@
 
 	</p>
 	<script >
+		// bai 1 thay doi fonsize
 		function changeFontSize(x) {
 			var paragraph=document.querySelectorAll('.paragraph');
 			for (var i = 0; i < paragraph.length; i++) {
@@ -30,7 +31,7 @@
 
 
 
-
+// bai2 tăng kich thuoc cua doan van len 1px
 		function increaseFontSize(paragraph) {
 			var para =document.getElementById(paragraph);
 			var getFontSize = para.style.fontSize;  
@@ -43,7 +44,7 @@
 			}
 		}
 
-
+// bai3 giam kich thuoc cua doan van di 1px
 
 		function decreaseFontSize(paragraph) {
 			var para =document.getElementById(paragraph);
@@ -58,7 +59,7 @@
 		}
 
 
-
+// bai 4 thay doi mau cua chu
 		function changeColor() {
 			var x=document.getElementsByClassName('paragraph');
 			x[0].style.color='red';
@@ -68,7 +69,7 @@
 
 
 
-
+// bai 5 thay doi mau bg
 		function changeBgColor(color) {
 			document.body.style.backgroundColor=color;
 			
@@ -76,9 +77,13 @@
 
 
 		
-
+// bai6 coppy noi dung doan van
+function copyContent(paragraph1, paragraph2) {
+	document.getElementById('p1').innerHTML=document.getElementById('p2').innerHTML;
+	
+	
 		
-			
+}			
 
 
 

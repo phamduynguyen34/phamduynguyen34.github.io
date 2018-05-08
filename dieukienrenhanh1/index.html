@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dieukienrenhanh1</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script>
+// bai1 tim ra so lon nhat trong 2 so
+function big(a,b) {
+  if (typeof a==='number'&&typeof b==='number') {
+    if (a>b) {
+      return a;
+    }
+    else return b;
+  }
+  else return'khong phai la so';
+  
+}
+
+
+// bai2 tinh giai thua
+function fact(num) {
+  
+  if (typeof num==='number'&& num>0) {
+    var res=1;
+    for (var i = 1; i <= num; i++) {
+      res=res*[i];
+    }
+    return res;
+  }
+  else return'khong phai so';
+
+
+
+
+// bai3 viet function tao ra mang moi trong mang lam cac so chan va sap xep tu be den lon
+    function abc(arr) {
+  if (Array.isArray(arr)) {
+    var res=[];
+    for (var i = 0; i <= arr.length-1; i++) {
+      if (arr[i]%2==0) {
+        res.push(arr[i]);
+      }
+    }
+    return res.sort(function(c,d) {
+      return c-d;
+    });
+  }
+}
+}
+// bai4 kiem tra hop le tinh thong tin nguoi dung
+var obj = {
+  usename:'we',
+  password:'aaaaa',
+  confirm:'aaaaaaaaa',
+  intro:function() {
+    if (this.usename!=0 && this.usename.length<20) {
+      document.write('hop le'+ "<br>");
+      if (this.password.length>=6 && this.password.length<=30) {
+        document.write('hop le'+ "<br>");
+        if (this.confirm===this.password) {
+          document.write('hop le'+ "<br>");
+        }
+        else document.write( 'sai'+ "<br>");
+      }
+      else document.write( 'sai'+ "<br>");
+
+    }
+    else document.write( 'sai'+ "<br>");
+  }
+}
+ 
+</script>
+
+
+
+
+
+</body>
+</html>

@@ -11,9 +11,20 @@ img{
 a{
 	text-decoration: none;
 }
+a:hover{
+	color: #ff00a3;
+}
+span{
+	color: #ff00a3;
+}
 .wrap{
 	padding-top: 20px;
+	height: 690px;
 }
+.ten{
+	background-color: pink;
+}
+
 #title1{
 	width: 15%;
 	float: left;
@@ -38,6 +49,7 @@ a{
 }
 .name{
 	text-align: center;
+		padding-left: 53px;
 }
 .before{
 	width: 3px;
@@ -53,12 +65,18 @@ a{
 	background: red;
 	position: absolute;
 	top: 10px;
-	left: 175px;
+	left: 188px;
 }
 .title{
 	position: relative;
 	width: 1200px;
 	margin: auto;
+}
+#title2{
+	padding-right: 27px;
+}
+#nam{
+	padding-right: 43px;
 }
 .image{
 	padding-top: 90px;
@@ -89,8 +107,155 @@ a{
 .img:hover>.icons{
 	opacity: 1;
 }
-.img:hover img{
-	opacity: 0.3;
+.anh{
+	transition: 2s;
+}
+.img:hover .anh{
+	opacity: 0.09;
+}
+.name1:hover p{
+	font-size: 20.2px;
+}
+.menu{
+	height: 690px;
+	background-color: #8080802e;
+}
+.wrap1{
+	margin: auto;
+	width: 1200px;
+	padding-top: 70px;
+}
+/*.wrap1::after {
+	content: ".";
+	opacity: 0;
+
+}*/
+.content{
+	float: left;
+	width: 33.33333%;
+	background-color: #eaeaea2e;
+}
+.previous{
+	width: 2px;
+	height: 40px;
+	background-color: pink;
+	position: absolute;
+	top: 5px;
+	left: 35px;
+}
+.middle{
+	padding-left: 70px;
+}
+.next{
+	width: 2px;
+	height: 40px;
+	background-color: pink;
+	position: absolute;
+	top: 5px;
+	left: 180px;
+}
+.small{
+	position: relative;
+	float: left;
+	width: 50%;
+}
+.button{
+	border: 2px solid #8080802e;
+	float: left;
+	width: 100px;
+	padding-left: 20px;
+	padding-top: 3px;
+	height: 40px;
+	position: absolute;
+	top: 5px;
+	left: 240px;
+}
+i{
+	padding: 6px;
+	float: left;
+	width: 33.33%
+}
+.mid{
+	width: 2px;
+	height: 30px;
+	background-color: #8080802e;
+	float: left;
+	padding-left: 2px;
+}
+.big{
+	position: relative;
+	height: 80px;
+}
+.pic{
+	width: 35%;
+	float: left;
+	position: relative;
+}
+.box{
+	padding-left: 35px;
+	height: 170px;
+}
+.nguyen{
+	width: 97%;
+	background-color: white;
+}
+.picc1{
+	font-size: 40px;
+	position: absolute;
+	top: 38px;
+	left: 30px;
+}
+.top{
+	width: 1px;
+	height: 120px;
+	background-color: black;
+	position: absolute;
+	top: 3px;
+	left: 15px;
+
+}
+.bot{
+	width: 1px;
+	height: 120px;
+	background-color: black;
+	position: absolute;
+	top: 3px;
+	left: 109px;
+
+}
+.left{
+	height: 1px;
+	width: 120px;
+	background-color: black;
+	position: absolute;
+	top: 15px;
+	left: 2px;
+
+}
+.right{
+	height: 1px;
+	width: 120px;
+	background-color: black;
+	position: absolute;
+	top: 109px;
+	left: 2px;
+
+}
+.live{
+	opacity: 0;
+	transition: 2s;
+}
+.box:hover .live{
+	opacity: 1;
+}
+.box:hover .picc{
+	opacity: 0.2;
+}
+.picc{
+	transition: 2s;
+}
+.money{
+	color: #ff00a3;
 }
 
 

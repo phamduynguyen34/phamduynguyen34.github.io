@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>May tinh</title>
+    <style>
+        button {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <input id="input" type="text">
+    <input type="text" id="nguyen">
+    <button onclick="xuly(this)" value="0">0</button>
+    <button onclick="xuly(this)" value="1">1</button>
+    <button onclick="xuly(this)" value="2">2</button>
+    <button onclick="xuly(this)" value="3">3</button>
+    <button onclick="xuly(this)" value="4">4</button>
+    <button onclick="xuly(this)" value="5">5</button>
+    <button onclick="xuly(this)" value="6">6</button>
+    <button onclick="xuly(this)" value="7">7</button>
+    <button onclick="xuly(this)" value="8">8</button>
+    <button onclick="xuly(this)" value="9">9</button>
+    <button onclick="xuly(this)" value="+">+</button>
+    <button onclick="xuly(this)" value="-">-</button>
+    <button onclick="xuly(this)" value="*">x</button>
+    <button onclick="xuly(this)" value="/">:</button>
+    <button onclick="input.value=input.value/100" value="%">%</button>
+    <button onclick="tinhtoan()">=</button>
+    <button onclick="giaithua()">!</button>
+    <button onclick="input.value = input.value * input.value">^2</button>
+    <!-- <button onclick="binhphuong()">^2</button> -->
+    <button onclick="input.value=Math.PI">r</button>
+    <button onclick="input.value='',nguyen.value='' ">AC</button>
+    <button onclick="input.value=input.value.substr(0,input.value.length-1)">DEL</button>
+
+
+    <script>
+        // lay gia tri cua button de gan vao input
+        var b = '';
+
+        var xuly = function(a) {
+            // value nhan gia tri
+            b += a.value;
+            // lay lien tuc cac gia tri
+            document.getElementById('input').value += a.value;
+        }
+
+
+
+
+        // thuc hien cac phep tinh
+        var tinhtoan = function() {
+            // eval co tac dung hieu dc cac phep tinh
+            document.getElementById('nguyen').value = eval(b);
+        }
+
+
+
+        // giaithua
+        function giaithua() {
+            function name() {
+                var res = 1;
+
+
+                for (i = input.value; i > 0; i--) {
+                    res *= i;
+                }
+                return res;
+            }
+            document.getElementById('input').value = eval('name(b)');
+        }
+
+        // // binhphuong
+        // function binhphuong() {
+        //     // function abc() {
+        //     //     var res = b;
+        //     //     res = res * res;
+        //     //     return res;
+
+        //     // }
+        //     // document.getElementById('input').value = eval('abc(b)');
+        //     input.value = input.value * input.value;
+        // }
+
+
+        // pi
+        // function pi() {
+        //     input.value = Math.PI.value;
+
+        // }
+    </script>
+</body>
+
+</html>

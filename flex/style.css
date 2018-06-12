@@ -23,6 +23,7 @@ a {
 .main-menu {
     margin: auto;
     background-color: black;
+    position: fixed;
 }
 
 .logo {

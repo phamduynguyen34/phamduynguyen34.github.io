@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Store</title>
+    <link rel="stylesheet" href="css//style.css">
+    <script src="jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/ext-core/3.1.0/ext-core.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+
+
+
+
+
+
+
+            <div class="main-menu navbar">
+                <div class="logo">
+                    <div class="name">
+                        <a href="index.html">
+                            <span><p>N'HOMME</p></span>
+                        </a>
+                        <div class="clear"></div>
+                    </div>
+                    <p></p>
+                    <div class="clear"></div>
+                </div>
+                <div class="all">
+                    <div class="button">
+
+                        <div class="menu home"><a href="index.html">HOME</a></div>
+                        <div class="menu suits"><a href="#">SUITS</a></div>
+                        <div class="menu shoes"><a href="#">SHOES</a></div>
+                        <div class="menu shirt"><a href="#">SHIRT</a></div>
+                        <div class="menu news"><a href="#">NEWS</a></div>
+                    </div>
+                    <div class="menu-search">
+                        <input type="text" name="search" id="ipt-search" placeholder="Search...">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+            </div>
+            <!-- <div class="clear"></div> -->
+
+
+
+
+
+
+
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <!-- <div class="numbertext">1 / 3</div> -->
+                    <img class="slide" name='slide' stt="0" src="img/banner1.jpg" style="width:100%">
+                    <div class="text" style="color: black"><b>N'HOMME</b></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <!-- <div class="numbertext">2 / 3</div> -->
+                    <img class="slide" name='slide' stt="1" src="img/banner2.png" style="width:100%">
+                    <div class="text"><b>N'HOMME</b></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <!-- <div class="numbertext">3 / 3</div> -->
+                    <img class="slide" name='slide' stt="2" src="img/banner3.png" style="width:100%">
+                    <div class="text"><b>N'HOMME</b></div>
+                </div>
+
+                <a class="prev" id="prew" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" id="next" onclick="plusSlides(1) ">&#10095;</a>
+                <div class="clear"></div>
+
+
+                <div class="but" style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <div class="clear"></div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+        </header>
+        <div class="content">
+            <div class="slogan">
+                <span><b> Fashion 2018</b></span>
+
+            </div>
+            <div class="box">
+                <div class="post">
+                    <div class="number">
+                        <img src="img/giay.jpg" alt="giay">
+                        <div class="clear"></div>
+                    </div>
+                    <div class="number">
+                        <img src="img/da.jpg" alt="dai da">
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="post">
+                    <img src="img/model1.jpg" alt="">
+                    <div class="clear"></div>
+                </div>
+
+                <div class="post">
+                    <img src="img/model1.jpg" alt="">
+                    <div class="clear"></div>
+                </div>
+
+            </div>
+            <div class="clear"></div>
+        </div>
+
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+
+        }
+
+
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+
+
+        // $(document).ready(function() {
+        //     var stt = 0;
+        //     $("img.slide").each(function() {
+        //         if ($this.is(':visible'))
+        //             stt = $(this).attr("stt");
+        //     });
+        //     $("#next").click(function() {
+        //         next = ++stt;
+        //         $("img.slide").hide();
+        //         $("img.slide").eq(next).show();
+        //     });
+        // });
+
+
+
+
+
+
+
+
+
+
+
+        // var i = 0;
+        // var img = [];
+        // var time = 3000;
+
+        // img[0] = 'banner1.jpg';
+        // img[0] = 'banner2.png';
+        // img[0] = 'banner3.png';
+
+        // function changeImage() {
+        //     document.slide.src = img[i];
+        //     if (i < img.length - 1) {
+        //         i++;
+        //     } else {
+        //     //     i = 0;
+        //     // }
+        //     // setTimeout("changeImage()", time);
+        // }
+        // window.onload = changeImage;
+    </script>
+
+
+
+</body>
+
+</html>
